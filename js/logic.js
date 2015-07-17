@@ -10,3 +10,22 @@ Hints for the first problem:
 NOTE: use a `for` loop to make this happen.
 
 */
+var array1 = [1,2,3,4];
+function sumAll(options){
+    var sumOf =0;
+  for (var i = 0; i < options.length; i++) {
+    sumOf += options[i];
+
+  }
+    console.log(sumOf);
+    return sumOf;
+}
+// sumAll(array1);
+
+function averageAll(options){
+  for (var i = 0; i < options.length; i++) {
+  
+
+  }
+}
+averageAll(array1);
