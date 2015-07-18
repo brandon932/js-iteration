@@ -10,9 +10,9 @@ Hints for the first problem:
 NOTE: use a `for` loop to make this happen.
 
 */
-var array1 = [1,2,3,4];
+var array1 = [1,2,3,4,0];
 function sumAll(options){
-    var sumOf =0;
+  var sumOf =0;
   for (var i = 0; i < options.length; i++) {
     sumOf += options[i];
 
@@ -23,9 +23,11 @@ function sumAll(options){
 // sumAll(array1);
 
 function averageAll(options){
+  var average = 0;
   for (var i = 0; i < options.length; i++) {
-  
-
+    x = sumAll(options);
+    average = x / options.length;
   }
+    console.log(average);
 }
 averageAll(array1);

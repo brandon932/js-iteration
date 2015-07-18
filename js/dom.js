@@ -9,3 +9,15 @@ Hints for the first problem:
     - takes the value returned by the `sum` function and displays it on the page
 
 */
+
+function getAllVallues(){
+var options = document.getElementsByName("prices")[0];
+var values = [];
+  for (var i = 0; i < options.length; i++) {
+    console.log(options[i].value);
+    values = push(options[i].value);
+
+  }
+  return values;
+}
+getAllVallues();
