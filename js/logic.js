@@ -14,7 +14,7 @@ var array1 = [1,2,3,4,0];
 function sumAll(options){
   var sumOf =0;
   for (var i = 0; i < options.length; i++) {
-    sumOf += options[i];
+    sumOf += +options[i];
 
   }
     console.log(sumOf);
@@ -30,4 +30,4 @@ function averageAll(options){
   }
     console.log(average);
 }
-averageAll(array1);
+// averageAll(array1);

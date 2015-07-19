@@ -14,10 +14,15 @@ function getAllVallues(){
 var options = document.getElementsByName("prices")[0];
 var values = [];
   for (var i = 0; i < options.length; i++) {
-    console.log(options[i].value);
-    values = push(options[i].value);
-
+    // values = values.push(options[i].value);
+    values.push(options[i].value);
   }
+  // return values;
+  console.log(values);
   return values;
 }
-getAllVallues();
+hello = getAllVallues();
+
+sumAll(hello);
+
+//
