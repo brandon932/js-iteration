@@ -21,20 +21,21 @@ var values = [];
   // console.log(values);
   return values;
 }
-allValues = getAllValues();
-
-sum(allValues);
-average(allValues);
-
-//
-var sumAllButton = document.getElementById("sum-all");
 function sumAll(){
-  sumAllButton.addEventListener("click", function(){
     var answer = sum(allValues);
+  // console.log(answer);
+  return answer;
+}
+
+window.onload = function(){
+ var sumAllButton = document.getElementById("sum-all");
+ sumAllButton.addEventListener("click", function(){
+   allValues = getAllValues();
+   answer.innerHTML = sum(allValues);
+   sumAll();
     }
   );
-  console.log(answer);
-}
-sumAllButton();
+};
+
 //document.getElementById("sum-all").addEventListener("click", function(){console.log("hello")})
 //sumAllButton.addEventListener("click", function(){document.getElementById("answer").innerHTML = sum(allValues)})
