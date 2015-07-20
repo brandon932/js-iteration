@@ -10,7 +10,7 @@ Hints for the first problem:
 
 */
 
-function getAllVallues(){
+function getAllValues(){
 var options = document.getElementsByName("prices")[0];
 var values = [];
   for (var i = 0; i < options.length; i++) {
@@ -18,11 +18,23 @@ var values = [];
     values.push(options[i].value);
   }
   // return values;
-  console.log(values);
+  // console.log(values);
   return values;
 }
-hello = getAllVallues();
+allValues = getAllValues();
 
-sumAll(hello);
+sum(allValues);
+average(allValues);
 
 //
+var sumAllButton = document.getElementById("sum-all");
+function sumAll(){
+  sumAllButton.addEventListener("click", function(){
+    var answer = sum(allValues);
+    }
+  );
+  console.log(answer);
+}
+sumAllButton();
+//document.getElementById("sum-all").addEventListener("click", function(){console.log("hello")})
+//sumAllButton.addEventListener("click", function(){document.getElementById("answer").innerHTML = sum(allValues)})

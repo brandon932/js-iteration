@@ -11,23 +11,28 @@ NOTE: use a `for` loop to make this happen.
 
 */
 var array1 = [1,2,3,4,0];
-function sumAll(options){
+function sum(options){
   var sumOf =0;
   for (var i = 0; i < options.length; i++) {
     sumOf += +options[i];
 
   }
-    console.log(sumOf);
+    // console.log(sumOf);
     return sumOf;
 }
 // sumAll(array1);
 
-function averageAll(options){
-  var average = 0;
+function average(options){
+  var numAverage = 0;
   for (var i = 0; i < options.length; i++) {
-    x = sumAll(options);
-    average = x / options.length;
+    x = sum(options);
+    numAverage = x / options.length;
   }
     console.log(average);
 }
-// averageAll(array1);
+// average(array1);
+
+function count(options){
+  selectedArray = options.length;
+  console.log(selectedArray);
+}
