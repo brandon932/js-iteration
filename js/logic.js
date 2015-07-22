@@ -24,13 +24,13 @@ function sum(options){
 
 function average(options){
   var numAverage = 0;
-  for (var i = 0; i < options.length; i++) {
+  // for (var i = 0; i < options.length; i++) {
     x = sum(options);
     numAverage = x / options.length;
-  }
+  // }
     console.log(average);
 }
-// average(array1);
+average(array1);
 
 function count(options){
   selectedArray = options.length;
