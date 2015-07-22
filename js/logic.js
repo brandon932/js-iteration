@@ -28,11 +28,12 @@ function average(options){
     x = sum(options);
     numAverage = x / options.length;
   // }
-    console.log(average);
+    return numAverage;
 }
-average(array1);
 
 function count(options){
   selectedArray = options.length;
-  console.log(selectedArray);
+  // console.log(selectedArray);
+  return selectedArray;
+
 }
